@@ -5,16 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shopping List</title>
-    <script src="script.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
       <h1>Shopping List</h1>
+      <div class="form-container">
+        <form class="form">
+          <label for="recipe-name">Recipe name:</label>
+          <input type="text" id="recipe-name" />
+        </form>
+      </div>
       <div class="recipes">
-        <button>+ Add Recipe</button>
-        <p></p>
+        <button id="add-btn">+ Add Recipe</button>
       </div>
     </div>
   </body>
+  <script src="script.js"></script>
 </html>
