@@ -8,6 +8,9 @@ addBtn.addEventListener("click", function () {
 function showNext() {
   const itemList = document.querySelector(".item-list");
   itemList.style.display = "block";
+
+  const recipeInput = document.querySelector(".recipe-input");
+  recipeInput.style.display = "none";
 }
 
 function createRecipe() {
