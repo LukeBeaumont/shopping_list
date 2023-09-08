@@ -14,5 +14,6 @@ function showNext() {
 }
 
 function createRecipe() {
-  //do stuff
+  let recipeName = document.querySelector("#recipe-name").value;
+  console.log(recipeName);
 }
