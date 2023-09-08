@@ -15,7 +15,14 @@ h1 {
   background-color: rgba(30, 145, 51, 0.809);
   border-radius: 4px;
   border: none;
-  justify-self: left;
+  padding: 5px;
+}
+
+#done {
+  color: white;
+  background-color: rgba(249, 46, 46, 0.809);
+  border-radius: 4px;
+  border: none;
   padding: 5px;
 }
 
@@ -25,4 +32,5 @@ h1 {
 
 input {
   width: 130px;
+  padding: 10 px;
 }
