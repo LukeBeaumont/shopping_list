@@ -1,7 +1,15 @@
 const addBtn = document.querySelector("#add-btn");
 
-addBtn.addEventListener("click", getList);
+addBtn.addEventListener("click", function () {
+  showNext();
+  createRecipe();
+});
 
-function getList() {
-  alert("yo");
+function showNext() {
+  const itemList = document.querySelector(".item-list");
+  itemList.style.display = "block";
+}
+
+function createRecipe() {
+  //do stuff
 }
