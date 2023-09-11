@@ -11,6 +11,7 @@ addBtn.addEventListener("click", function () {
 addRecipeBtn.addEventListener("click", function () {
   let newIngredient = document.querySelector("#items-list").value;
   recipeArray[0].ingredients.push(newIngredient);
+  clearInput();
 });
 
 function showNext() {
@@ -21,9 +22,9 @@ function showNext() {
   recipeInput.style.display = "none";
 }
 
-function recipe(name, ingredients) {
+function recipe(name) {
   this.name = name;
-  this.ingredients = [ingredients];
+  this.ingredients = [];
 }
 
 function addRecipeToList() {
@@ -31,4 +32,8 @@ function addRecipeToList() {
   let newRecipe = new recipe(recipeName);
   recipeArray.push(newRecipe);
   console.log(recipeArray);
+}
+
+function clearInput() {
+  document.querySelector("#items-list").value = "";
 }
