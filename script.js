@@ -1,10 +1,15 @@
 let recipeArray = [];
 
 const addBtn = document.querySelector("#add-btn");
+const addRecipeBtn = document.querySelector("#add-ingredient-btn");
 
 addBtn.addEventListener("click", function () {
   showNext();
   addRecipeToList();
+});
+
+addRecipeBtn.addEventListener("click", function () {
+  alert("yo");
 });
 
 function showNext() {

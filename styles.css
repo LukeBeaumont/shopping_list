@@ -10,7 +10,8 @@ h1 {
   text-decoration: underline rgba(30, 145, 51, 0.809);
 }
 
-#add-btn {
+#add-btn,
+#add-ingredient-btn {
   color: white;
   background-color: rgba(30, 145, 51, 0.809);
   border-radius: 4px;
