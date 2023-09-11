@@ -2,6 +2,7 @@ let recipeArray = [];
 
 const addBtn = document.querySelector("#add-btn");
 const addRecipeBtn = document.querySelector("#add-ingredient-btn");
+const doneBtn = document.querySelector("#done");
 
 addBtn.addEventListener("click", function () {
   showNext();
@@ -12,6 +13,10 @@ addRecipeBtn.addEventListener("click", function () {
   let newIngredient = document.querySelector("#items-list").value;
   recipeArray[0].ingredients.push(newIngredient);
   clearInput();
+});
+
+doneBtn.addEventListener("click", function () {
+  //dostuff
 });
 
 function showNext() {
