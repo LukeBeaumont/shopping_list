@@ -9,7 +9,8 @@ addBtn.addEventListener("click", function () {
 });
 
 addRecipeBtn.addEventListener("click", function () {
-  alert("yo");
+  let newIngredient = document.querySelector("#items-list").value;
+  recipeArray[0].ingredients.push(newIngredient);
 });
 
 function showNext() {
@@ -22,7 +23,7 @@ function showNext() {
 
 function recipe(name, ingredients) {
   this.name = name;
-  this.ingredients = ingredients;
+  this.ingredients = [ingredients];
 }
 
 function addRecipeToList() {
