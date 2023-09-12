@@ -67,6 +67,7 @@ function displayCards() {
   const cards = document.querySelector(".cards");
   for (let i = 0; i < recipeArray.length; i++) {
     let recipe = recipeArray[i];
+    cards.innerHTML = "";
 
     let recipeCard = document.createElement("div");
 
