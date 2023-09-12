@@ -48,3 +48,8 @@ input {
   width: 130px;
   margin: 10px;
 }
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}

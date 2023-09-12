@@ -18,6 +18,7 @@ addIngredientBtn.addEventListener("click", function () {
 doneBtn.addEventListener("click", function () {
   nextRecipe();
   increaseArray();
+  displayCards();
 });
 
 function addIngredient() {
@@ -60,4 +61,18 @@ function addRecipeToList() {
 function clearInput() {
   document.querySelector("#items-list").value = "";
   document.querySelector("#recipe-name").value = "";
+}
+
+function displayCards() {
+  const cards = document.querySelector(".cards");
+  for (let i = 0; i < recipeArray.length; i++) {
+    let recipe = recipeArray[i];
+
+    let recipeCard = document.createElement("div");
+
+    recipeCard.innerHTML = `<div class ="card">${recipe.name}<br>
+    ${recipe.ingredients} </div>`;
+
+    cards.appendChild(recipeCard);
+  }
 }
