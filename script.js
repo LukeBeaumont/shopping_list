@@ -10,14 +10,18 @@ addBtn.addEventListener("click", function () {
 });
 
 addRecipeBtn.addEventListener("click", function () {
-  let newIngredient = document.querySelector("#items-list").value;
-  recipeArray[0].ingredients.push(newIngredient);
+  addIngredient();
   clearInput();
 });
 
 doneBtn.addEventListener("click", function () {
-  //dostuff
+  nextRecipe();
 });
+
+function addIngredient() {
+  let newIngredient = document.querySelector("#items-list").value;
+  recipeArray[0].ingredients.push(newIngredient);
+}
 
 function showNext() {
   const itemList = document.querySelector(".item-list");
@@ -25,6 +29,14 @@ function showNext() {
 
   const recipeInput = document.querySelector(".recipe-input");
   recipeInput.style.display = "none";
+}
+
+function nextRecipe() {
+  const itemList = document.querySelector(".item-list");
+  itemList.style.display = "none";
+
+  const recipeInput = document.querySelector(".recipe-input");
+  recipeInput.style.display = "block";
 }
 
 function recipe(name) {
