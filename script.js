@@ -1,26 +1,32 @@
 let recipeArray = [];
+let count = 0;
 
-const addBtn = document.querySelector("#add-btn");
-const addRecipeBtn = document.querySelector("#add-ingredient-btn");
+const addRecipeBtn = document.querySelector("#add-btn");
+const addIngredientBtn = document.querySelector("#add-ingredient-btn");
 const doneBtn = document.querySelector("#done");
 
-addBtn.addEventListener("click", function () {
+addRecipeBtn.addEventListener("click", function () {
   showNext();
   addRecipeToList();
 });
 
-addRecipeBtn.addEventListener("click", function () {
+addIngredientBtn.addEventListener("click", function () {
   addIngredient();
   clearInput();
 });
 
 doneBtn.addEventListener("click", function () {
   nextRecipe();
+  increaseArray();
 });
 
 function addIngredient() {
   let newIngredient = document.querySelector("#items-list").value;
-  recipeArray[0].ingredients.push(newIngredient);
+  recipeArray[`${count}`].ingredients.push(newIngredient);
+}
+
+function increaseArray() {
+  count++;
 }
 
 function showNext() {
@@ -53,4 +59,5 @@ function addRecipeToList() {
 
 function clearInput() {
   document.querySelector("#items-list").value = "";
+  document.querySelector("#recipe-name").value = "";
 }
