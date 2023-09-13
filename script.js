@@ -68,11 +68,19 @@ function displayCards() {
   cards.innerHTML = "";
   for (let i = 0; i < recipeArray.length; i++) {
     let recipe = recipeArray[i];
+    //loop to style ingredients arrays
+    let text = "";
+    let list = recipe.ingredients;
+    list.forEach(myfunc);
 
+    function myfunc(item) {
+      text += "<br>" + item + "<br>";
+    }
+    //--------Add card to HTML---
     let recipeCard = document.createElement("div");
 
-    recipeCard.innerHTML = `<div class ="card"><u>${recipe.name}</u><br>
-    ${recipe.ingredients} </div>`;
+    recipeCard.innerHTML = `<div class ="card"><u>${recipe.name}</u>
+    ${text} </div>`;
 
     cards.appendChild(recipeCard);
   }
