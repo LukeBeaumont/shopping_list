@@ -65,9 +65,9 @@ function clearInput() {
 
 function displayCards() {
   const cards = document.querySelector(".cards");
+  cards.innerHTML = "";
   for (let i = 0; i < recipeArray.length; i++) {
     let recipe = recipeArray[i];
-    cards.innerHTML = "";
 
     let recipeCard = document.createElement("div");
 
