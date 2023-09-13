@@ -10,6 +10,12 @@ h1 {
   text-decoration: underline rgba(30, 145, 51, 0.809);
 }
 
+h4 {
+  font-family: Georgia, Cambria, Cochin, Times, "Times New Roman", serif;
+  color: black;
+  text-decoration: underline rgba(30, 145, 51, 0.809);
+}
+
 #add-btn,
 #add-ingredient-btn {
   color: white;
@@ -52,4 +58,13 @@ input {
 .cards {
   display: flex;
   flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid black;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  height: 100px;
+  width: 100px;
 }

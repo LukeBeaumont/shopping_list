@@ -71,7 +71,7 @@ function displayCards() {
 
     let recipeCard = document.createElement("div");
 
-    recipeCard.innerHTML = `<div class ="card">${recipe.name}<br>
+    recipeCard.innerHTML = `<div class ="card"><u>${recipe.name}</u><br>
     ${recipe.ingredients} </div>`;
 
     cards.appendChild(recipeCard);
