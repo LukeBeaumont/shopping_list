@@ -81,5 +81,7 @@ function displayCards() {
 
     recipeCard.innerHTML = `<div class ="card"><u>${recipe.name}</u>
     ${text} </div>`;
+
+    cards.appendChild(recipeCard);
   }
 }
